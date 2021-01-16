@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Anusha Srikanthan's homepage!
 
-You can use the [editor on GitHub](https://github.com/Nusha97/Nusha97.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I am Anusha Srikanthan currently pursuing MS Thesis in Electrical and Computer Engineering at Georgia Tech. If you'd like to contact me, feel free to send an email to asrikanthan3@gatech.edu. You can find my projects and work on [GitHub](https://github.com/Nusha97).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I completed my undergraduate education in Electronics and Communication Engineering with a Minor in Computer Science from from NIT Trichy, for more details about me, please take a look at my [CV](https://drive.google.com/file/d/1tws8DOA7JBUM7fI2LH94xj4inX0ICB0b/view?usp=sharing). 
 
 ### Markdown
 
