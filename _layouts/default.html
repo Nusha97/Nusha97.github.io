@@ -1,60 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anusha Srikanthan - 3rd Year PhD Student</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Anusha Srikanthan, 3rd year PhD at UPenn</h1>
-        <p>Department of Electrical and Systems Engineering</p>
-	    <p>GRASP Lab, University of Pennsylvania</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm currently pursuing a PhD in Electrical and Systems Engineering at University of Pennsylvania. My doctoral advisors are Dr. Nikolai Matni and Dr. Vijay Kumar. I graduated 
-	    from Georgia Tech with a Masters Thesis in Electrical and Computer Engineering at the end of Summer '21. I completed my undergraduate education in Electronics and Communication 
-	    Engineering with a Minor in Computer Science from NIT Trichy. If you are interested in my research, please take a look at my most recent 
-	    <a href="https://arxiv.org/abs/2307.13782"> paper</a> on synthesizing dynamically feasible trajectories by design for applications in underactuated robotics. 
-        </p>
-    </section>
-
-    <section id="research">
-        <h2>Research</h2>
-        <p>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/Publications">Publications</a></li>
+	    		</ul>
+			</nav>
+			<img src="/IMG_5421.jpg" width=200/>
+			 <p>
             Interested in robotic systems, learning-based control and multiagent systems research. 
         </p>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="https://arxiv.org/abs/2307.13782">A Data-Driven Approach to Synthesizing Dynamics-Aware Trajectories for Underactuated Robotic Systems</a></li>
-	    <li><a href="https://arxiv.org/abs/2305.15288">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation</a></li>
-	    <li><a href="https://arxiv.org/abs/2108.02733">Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation</a></li>
-        </ul>
-    </section>
-
-    <footer>
-	<ul>
-	<li><a href="mailto:sanusha@seas.upenn.edu">Email</a></li>
-	<li><a href="https://github.com/Nusha97">GitHub</a></li>
-	<li><a href="https://www.linkedin.com/in/anusha-srikanthan-630aa013b">LinkedIn</a></li>
-	<li><a href="https://scholar.google.com/citations?user=FE39aW0AAAAJ&hl=en">Google Scholar</a></li>
-	</ul>
-   </footer>
-</body>
-</html>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:sanusha@seas.upenn.edu">Email</a></li>
+	        		<li><a href="https://github.com/Nusha97">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/anusha-srikanthan-630aa013b">LinkedIn</a></li>
+				<li><a href="https://scholar.google.com/citations?user=FE39aW0AAAAJ&hl=en">Google Scholar</a></li>
+				</ul>
+			</footer>
+			
+		</body>
+	</html>
