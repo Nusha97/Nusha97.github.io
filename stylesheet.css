@@ -227,6 +227,10 @@
     transform: translateY(-2px);
   }
 
+  .paper-card:hover .paper-title {
+    color: #0066cc;
+  }
+
   .paper-thumbnail {
     flex-shrink: 0;
     width: 100px;
@@ -339,6 +343,10 @@
     transform: translateX(5px);
   }
 
+  .experience-card:hover .experience-title {
+    color: #0066cc;
+  }
+
   .experience-header {
     display: flex;
     justify-content: space-between;
@@ -397,6 +405,10 @@
   .teaching-card:hover {
     box-shadow: 0 4px 12px rgba(0,102,204,0.15);
     transform: translateX(5px);
+  }
+
+  .teaching-card:hover .teaching-title {
+    color: #0066cc;
   }
 
   .teaching-card-header {
