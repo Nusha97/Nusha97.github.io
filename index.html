@@ -11,20 +11,72 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
       body {
-          padding: 25px;
-          background-color: black;
-          color: white;
-          font-size: 25px;
+          padding: 40px 25px;
+          background-color: #ffffff;
+          color: #333333;
+          font-size: 16px;
       }
 
       .dark-mode {
-          background-color: black;
-          color: white;
+          background-color: #1a1a1a;
+          color: #ffffff;
       }
 
       .light-mode {
-          background-color: white;
-          color: black;
+          background-color: #ffffff;
+          color: #333333;
+      }
+
+      .header-container {
+          background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+          padding: 30px;
+          border-radius: 10px;
+          margin-bottom: 40px;
+          border-left: 5px solid #0066cc;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      }
+
+      .header-content {
+          display: flex;
+          gap: 30px;
+          align-items: flex-start;
+      }
+
+      .profile-photo {
+          flex-shrink: 0;
+      }
+
+      .profile-photo img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 3px solid #0066cc;
+          box-shadow: 0 4px 12px rgba(0,102,204,0.2);
+      }
+
+      .header-text {
+          flex: 1;
+      }
+
+      .social-links {
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+          margin-top: 15px;
+          font-size: 14px;
+      }
+
+      .social-links a {
+          padding: 8px 12px;
+          background-color: #e6f2ff;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+          background-color: #0066cc;
+          color: white;
       }
   </style>
   </head>
@@ -39,7 +91,7 @@
                 <p class="name" style="text-align: center;">
                   Anusha Srikanthan
                 </p>
-                <p>I'm a 4th year PhD student at the <a href="https://www.grasp.upenn.edu/">GRASP Lab, University of Pennsylvania</a> in Philly, where I'm jointly advised by <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>, an expert mathematician and <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>, an expert roboticist.
+                <p>I'm a 5th year PhD candidate at the <a href="https://www.grasp.upenn.edu/">GRASP Lab, University of Pennsylvania</a> in Philly, where I'm jointly advised by <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>, an expert mathematician and <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>, an expert roboticist.
                 </p>
                 <p>
                   I'm motivated by problems that require rigorous mathematical guarantees while being practically useful for robot applications. My previous research was on the topic of guaranteeing dynamic feasibility in trajectory optimization for nonlinear systems via optimization theory, with applications to under-actuated robots. I've received the <a href="https://star-lab.cc.gatech.edu/papers/srikanthan-resilient-imitation/">Excellent Paper Award</a> for my Workshop paper on <a href="">Resilient Task Allocation for Heterogeneous Robots</a> at IROS 2021.
@@ -68,7 +120,46 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <div style="max-width:900px;margin:0 auto;">
+            <h2>Research</h2>
+            <p>
+              I'm interested in the problem of safety in robotics using layered control, optimization theory, and machine learning. Most of my research is about discovering mathematical principles governing the design of decision-making hierarchies in task planning, trajectory design, and feedback control. Some papers are highlighted below.
+            </p>
+
+            <div class="card-container">
+              <!-- ICRA 2025 Paper -->
+              <div class="paper-card">
+                <div class="paper-thumbnail">
+                  <img src='images/icra.PNG' alt="ADMM-MCBF-LCA">
+                </div>
+                <div class="paper-content">
+                  <div>
+                    <div class="paper-title">
+                      ADMM-MCBF-LCA: A Layered Control Architecture for Safe Real-Time Navigation
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
+                      <a href="">Yifan Xue</a>*,
+                      <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
+                      <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>,
+                      <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a>
+                    </div>
+                    <div class="paper-venue">📰 ICRA 2025</div>
+                    <p class="paper-abstract">
+                      To tackle the combined challenges of state and input constraint satisfaction, dynamic feasibility, safety, and real-time computation, we present a layered control architecture (LCA) consisting of an offline path library generation layer, and an online path selection and safety layer.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://www.youtube.com/watch?v=YhL_OHK8AZ8">🎥 Video</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;display:none;"><tbody>
 
             <tr onmouseout="icra_stop()" onmouseover="icra_start()">
                 <td style="padding:40px;width:50%;vertical-align:middle">
@@ -95,7 +186,9 @@
                   <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
                   <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>,
                   <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a>
-                  <em>Submitted to ICRA</em>, 2025
+                  <em>ICRA</em>, 2025
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=YhL_OHK8AZ8">Video</a>
                   <br>
                   <p>
                     To tackle the combined challenges of state and input constaint satisfaction, dynamic feasibility, safety, and real-time computation, we present a layered control architecture (LCA) consisting of an offline path library generation layer, and an online path selection and safety layer.
@@ -175,17 +268,21 @@
               <tr onmouseout="quad3d_stop()" onmouseover="quad3d_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="two">
-                    <img src="images/quad3d.mp4" type="video/mp4">
+                    <video id="quad3d_image" src="images/quad3d.mp4" width="100%" style="display:none;"></video>
                   </div>
                   <div class="one">
-                    <img src="images/quad3d.png" width="100">
+                    <img id="quad3d_static" src="images/quad3d.png" width="100">
                   </div>
                   <script type="text/javascript">
                     function quad3d_start() {
-                      document.getElementById('quad3d_image').style.opacity = "1";
+                      document.getElementById('quad3d_image').style.display = "block";
+                      document.getElementById('quad3d_static').style.display = "none";
+                      document.getElementById('quad3d_image').play();
                     }
                     function quad3d_stop() {
-                      document.getElementById('quad3d_image').style.opacity = "0";
+                      document.getElementById('quad3d_image').style.display = "none";
+                      document.getElementById('quad3d_static').style.display = "block";
+                      document.getElementById('quad3d_image').pause();
                     }
                     quad3d_stop();
                   </script>
@@ -210,6 +307,28 @@
                   </p>
                 </td>
               </tr>  
+              
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2505.10228">
+                    <span class="papertitle">QuadLCD: Layered Decomposition Enables Actuator Feasibility</span>
+                  </a>
+                  <br>
+                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>
+                  <br>
+                  <em>ICRA 2025 Workshop on 25 Years of Aerial Robotics</em>
+                  <br>
+                  <strong>Oral Spotlight</strong>
+                  <br>
+                  <a href="https://arxiv.org/abs/2505.10228">arXiv</a>
+                  <p></p>
+                  <p>
+                    We present a layered control architecture that decomposes the quadrotor control problem into planning and feedback control layers, enabling guaranteed actuator feasibility through systematic decomposition theory.
+                  </p>
+                </td>
+              </tr>
               
               <tr onmouseout="iros_stop()" onmouseover="iros_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -240,7 +359,8 @@
                   <br>
                   <em>IROS</em>, 2023
                   <br>
-                  <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+                  <a href="https://arxiv.org/abs/2405.10314">arXiv</a> &nbsp;/&nbsp;
+                  <a href="https://drive.google.com/file/d/1JkvYeseXEdFfdAW4Z_aveLbsD47jNGD8/view">Video</a>
                   <p></p>
                   <p>
                     Motivated by the lack of existing methods to account for controller cost in trajectory planning for robotic systems, we propose a principle derivation to 
@@ -402,21 +522,87 @@
       </tbody>
     </table>
     
-    <table width="100%" align="center" border="0" cellpadding="20">
+    <div style="max-width:900px;margin:0 auto;padding:0 20px;">
+      <h2>Industry Experience</h2>
+      
+      <!-- Robotics and AI Institute -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="experience-title">PhD Research Intern</div>
+          <div class="experience-date">Summer & Fall 2025</div>
+        </div>
+        <div class="experience-org">Robotics and AI Institute</div>
+        <div class="experience-description">
+          <ul>
+            <li>Worked with a hardware and controls research group developing a new platform for high-performance humanoid robots equipped with actuators achieving close to 40 mph throws of a baseball. (<a href="https://www.linkedin.com/posts/rai-inst_dynamic-manipulation-steps-up-to-the-plate-ugcPost-7396940838867537920-cDcV?utm_source=share&utm_medium=member_desktop&rcm=ACoAABdyBwUB8DQaRnxGU8eQPqSSlwZyfCdCMOo">video</a>)</li>
+            <li>Currently writing a paper solving a fundamental challenge of impact-aware safety for the platform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cruise -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="experience-title">AI Robotics, PhD Intern</div>
+          <div class="experience-date">Summer 2024</div>
+        </div>
+        <div class="experience-org">Cruise LLC</div>
+        <div class="experience-description">
+          <ul>
+            <li>Identified challenges in data collection and training of machine learning models for offline evaluation of self-driving policies.</li>
+            <li>Developed a principled approach to design loss functions and benchmarked against existing implementations. <a href="https://drive.google.com/file/d/1pXLeiMUWVBhiRE_LPo49LfmQ2xc3XU9m/view?usp=drive_link">Project report</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- NVIDIA -->
+      <div class="experience-card">
+        <div class="experience-header">
+          <div class="experience-title">Hardware Engineering Intern</div>
+          <div class="experience-date">Summer 2018</div>
+        </div>
+        <div class="experience-org">NVIDIA Graphics Pvt Ltd</div>
+        <div class="experience-description">
+          <ul>
+            <li>Designed and implemented a Safety Duplication Plugin for multiple error detection using concepts of redundancy and clock domains, integrated on Perforce using Perl scripts with Viva embedded code programmed on a UNIX-based OS.</li>
+            <li><a href="https://drive.google.com/file/d/1hPsVWyAELKcQSqGpmI6Xt-Qfgmp__-qz/view">Project report</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <table width="100%" align="center" border="0" cellpadding="20" style="display:none;">
       <tbody>
+        <!-- Old internship entries - hidden -->
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div style="background-color: #f0f0f0; padding: 15px; text-align: center; border-radius: 5px;">
+              <strong>Robotics & AI</strong>
+            </div>
+          </td>
+          <td width="75%" valign="center">
+            <strong>PhD Research Intern</strong>, Robotics and AI Institute
+            <br>Summer and Fall 2025
+            <br>
+            <ul>
+              <li>Worked with a hardware and controls research group developing a new platform for high-performance humanoid robots equipped with actuators achieving close to 40 mph throws of a baseball. (<a href="https://www.linkedin.com/posts/rai-inst_dynamic-manipulation-steps-up-to-the-plate-ugcPost-7396940838867537920-cDcV?utm_source=share&utm_medium=member_desktop&rcm=ACoAABdyBwUB8DQaRnxGU8eQPqSSlwZyfCdCMOo">video</a>)</li>
+              <li>Currently writing a paper solving a fundamental challenge of impact-aware safety for the platform.</li>
+            </ul>
+          </td>
+        </tr>
+
         <!-- Internship at Cruise -->
         <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
             <img src="images/cruise_logo.jpg" alt="Cruise Logo" width="80" height="auto"> <!-- Logo size adjusted -->
           </td>
           <td width="75%" valign="center">
-            <strong>AI Robotics, PhD Intern</strong>, Behaviors Org, Cruise
-            <br>June 2024 - August 2024
+            <strong>AI Robotics, PhD Intern</strong>, Cruise LLC
+            <br>Summer 2024
             <br>
             <ul>
-              <li>Identified the challenges of lack of interpretability of model outputs and label quality in their current framework.</li>
-              <li>Proposed a new loss function based on task-specific metrics from observing the correlation trends of metrics through experiments.</li>
-              <li>Conducted performance evaluations of the trained models to improve the interpretability of the scoring pipeline. <a href="https://drive.google.com/file/d/1pXLeiMUWVBhiRE_LPo49LfmQ2xc3XU9m/view?usp=drive_link">Link to report.</a></li>
+              <li>Identified challenges in data collection and training of machine learning models for offline evaluation of self-driving policies.</li>
+              <li>Developed a principled approach to design loss functions and benchmarked against existing implementations. <a href="https://drive.google.com/file/d/1pXLeiMUWVBhiRE_LPo49LfmQ2xc3XU9m/view?usp=drive_link">Project report</a></li>
             </ul>
           </td>
         </tr>
@@ -427,14 +613,12 @@
             <img src="images/nvidia_logo.jpeg" alt="NVIDIA Logo" width="80" height="auto"> <!-- Logo size adjusted -->
           </td>
           <td width="75%" valign="center">
-            <strong>SOC Design Hardware Engineering Intern</strong>, NVIDIA Graphics Pvt Ltd, Bengaluru, India
-            <br>May 2018 - July 2018
+            <strong>Hardware Engineering Intern</strong>, NVIDIA Graphics Pvt Ltd
+            <br>Summer 2018
             <br>
             <ul>
-              <li>Designed and implemented a Safety Duplication Plugin for multiple error detection using concepts of redundancy and clock domains and integrated it on Perforce using Perl
-                scripts with Viva embedded code programmed on a UNIX based OS.</li>
-              <li>Formalized hierarchical changes in the internal architecture of the IP module for making it plugin compatible, increasing the safety compliance at the hardware level to prevent failure when the chip is used in self-driving cars. <a href="https://drive.google.com/file/d/1hPsVWyAELKcQSqGpmI6Xt-Qfgmp__-qz/view">Link to project report.</a></li>
-            </ul>
+              <li>Designed and implemented a Safety Duplication Plugin for multiple error detection using concepts of redundancy and clock domains, integrated on Perforce using Perl scripts with Viva embedded code programmed on a UNIX-based OS.</li>
+              <li><a href="https://drive.google.com/file/d/1hPsVWyAELKcQSqGpmI6Xt-Qfgmp__-qz/view">Project report
           </td>
         </tr>
       </tbody>
@@ -481,32 +665,65 @@
     
     <table width="100%" align="center" border="0" cellpadding="20">
       <tbody>
-        <!-- Invited Talks Section -->
+        <!-- Invited Talks and Seminars Section -->
         <tr>
           <td width="100%" valign="center">
-            <a href="#">Augmented Lagrangian Layered Control Architectures for Underactuated Robotic Systems</a>
-            <br>Invited Talk at Microsoft Research, NYC, March 2024
+            <h3>Invited Seminars and Workshop Talks</h3>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" valign="center">
+            <strong>January 2026:</strong> Presented a poster and attended networking sessions with academic and industry leaders at the Gordon Research Conference, Ventura, CA, USA
             <br>
-            <a href="#">Nonlinear Layered Control Architectures for Trajectory Planning in Underactuated Robotic Systems</a>
-            <br>Invited Talk at ThirdWave Innovation, October 2023
+            <strong>November 2025:</strong> Presented a seminar talk titled "A Layered Control Architecture for Reliable Agility" at the Robotics Seminar Series, University of Delaware
             <br>
-            <a href="#">Data-driven Synthesis of Dynamics-Aware Trajectory Generation for Underactuated Robots</a>
-            <br>Invited Seminar at Caltech, August 2023
+            <strong>October 2025:</strong> Presented on "Egocentric Safety via CBFs for Agile Manipulation" at the Research Internship Presentation, Robotics and AI Institute
+            <br>
+            <strong>May 2025:</strong> <strong>Oral Spotlight</strong> - Presented a 5-minute talk on "QuadLCD: Layered Decomposition Enables Actuator Feasibility" at the ICRA 2025 Workshop on 25 Years of Aerial Robotics, Atlanta, GA, USA
+            <br>
+            <strong>March 2025:</strong> Attended the 2025 Grad Cohort For Women Workshop by Computing Research Association, Denver, CO, USA. Attended sessions tailored for student career development and received a travel grant from CRA funding the entire travel, stay, and registration.
+            <br>
+            <strong>January 2025:</strong> <a href="https://sites.harvard.edu/nsf-rl-workshop/posters/">Poster Session and Networking</a> at the NSF Workshop on Reinforcement Learning, Harvard University. Presented poster titled "A Data-Driven Approach to Synthesizing Dynamics-Aware Trajectories for Underactuated Robotic Systems"
+            <br>
+            <strong>December 2024:</strong> Invited talk at Dr. Siddhartha Srinivasa's robotics research group, University of Washington. Presented "Layered Control Decompositions enable Safe Navigation of Underactuated Robots"
+            <br>
+            <strong>November 2024:</strong> Poster Session and Networking at the Symposium on Safe Deployment of Foundation Models, Princeton
+            <br>
+            <strong>June 2024:</strong> Poster Session and Networking at the Workshop on Optimization, Learning, and Control, Princeton
+            <br>
+            <strong>March 2024:</strong> Invited research seminar on "Layered Control Architectures for Underactuated Robotic Systems" by Dr. Lekan Molu at Microsoft Research, NYC
+            <br>
+            <strong>October 2023:</strong> Invited talk on "Data-driven Synthesis of Dynamics-Aware Trajectory Generation" by Dr. Asif Rana (currently at Amazon Robotics), Thirdwave Innovation
+            <br>
+            <strong>August 2023:</strong> Invited talk on "Data-driven Synthesis of Dynamics-Aware Trajectory Generation" at Dr. John Doyle's group, Caltech
             <br>
           </td>
         </tr>
     
-        <!-- Teaching Experience Section -->
+        <!-- Teaching and Mentorship Section -->
         <tr>
           <td width="100%" valign="center">
-            <strong>Graduate Teaching Assistant</strong>
-            <br>University of Pennsylvania
-            <br><a href="#">CIS 521: Applied Machine Learning (Spring 2023)</a>
-            <br><a href="#">ESE 204: Decision Models (Fall 2022)</a>
-            <br><a href="#">ESE 5300: Elements of Probability Theory (Fall 2022, Spring 2023)</a>
+            <h3>Teaching and Mentorship</h3>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" valign="center">
+            <strong>Fall 2025:</strong> Teaching Certificate from the Center for Excellence in Teaching, Learning and Innovation, University of Pennsylvania. Attended five workshops on different aspects of teaching such as effective lecturing, handling office hours and assessments. Had a teaching fellow observe my lecture and provide feedback. Participated in a teaching philosophy workshop and presented my teaching statement to complete the requirements for the teaching certificate.
             <br>
-            <strong>Instructor at Inspirit AI</strong>
-            <br>Taught machine learning and Python programming to high school students, Summer 2023
+            <strong>Spring 2025-2026:</strong> Undergraduate Student Mentor for "Quadrotor Swarm Control using Reinforcement Learning" at University of Pennsylvania. Mentoring undergraduate student Divya Karnani in reinforcement learning, guiding her in policy optimization and hands-on implementation using Python, GitHub workflows, and RL libraries such as Stable Baselines.
+            <br>
+            <strong>Spring 2025:</strong> Guest Lecturer (MEAM 620) for "Learning for Adaptive and Reactive Control of Robots" (Graduate Course) at University of Pennsylvania. Presented research topics in Dr. Nadia Figueroa's robotics course through a bottom-up approach that connected fundamental challenges to complex implementations. The lectures transitioned from decomposition theory for linear systems to the challenges of nonlinear extensions.
+            <br>
+            <strong>Spring 2023-2024:</strong> MS Student Mentor for "Drag-Aware Quadrotor Trajectory Generation" at University of Pennsylvania. Mentored Hanli Zhang (M.S., Penn) on her first research project, developing drag-aware planning algorithms by leveraging trajectory tracking errors as a data-driven proxy for model mismatch, building on cost-to-go learning methods.
+            <br>
+            <strong>Fall 2023:</strong> Head Teaching Assistant (ESE 2040) for "Decision Models" (Undergraduate) at University of Pennsylvania. Assisted supervisor Dr. Nikolai Matni teaching the undergraduate course spanning linear algebra and optimization. Tasked with weekly office hours, homework design, grading and recitations.
+            <br>
+            <strong>Spring 2023:</strong> Teaching Assistant (CIS 419 / 519) for "Applied Machine Learning" (Undergraduate / Graduate) at University of Pennsylvania. Served as TA for a class of over 100 students as part of a massive instructional team. Tasked with recitations, weekly office hours, grading and advised student projects.
+            <br>
+            <strong>Fall 2022:</strong> Teaching Assistant (ESE 530) for "Elements of Probability Theory" (Graduate) at University of Pennsylvania. Part of the instructional staff for Dr. Santhosh Venkatesh teaching ESE 530 which also served as a qualifier for doctoral students. Conducted two office hours per week, monthly recitations and grading. Helped develop an online course on the foundations of machine learning with Dr. Venkatesh.
+            <br>
+            <strong>Summer 2023:</strong> Instructor for "AI and Python Programming" (High School) at Inspirit AI (Online). Part-time instructor of Python and Artificial Intelligence through project-based learning.
+            <br>
           </td>
         </tr>
       </tbody>

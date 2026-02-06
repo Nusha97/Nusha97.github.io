@@ -64,13 +64,14 @@
   }
   
   a {
-    color: #1772d0;
+    color: #0066cc;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
   a:focus,
   a:hover {
-    color: #f09228;
+    color: #0052a3;
     text-decoration: none;
   }
   
@@ -81,32 +82,46 @@
   p,
   a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   h2 {
-    margin: 0;
-    font-weight: normal;
+    margin: 30px 0 20px 0;
+    font-weight: 600;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #1a1a1a;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    margin: 20px 0 15px 0;
+    font-weight: 600;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 22px;
+    color: #1a1a1a;
   }
   
   .papertitle {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 700;
+    color: #1a1a1a;
   }
   
   .name {
     padding-top: 20px;
     margin: 0;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
   }
   
   .one {
@@ -132,4 +147,234 @@
   
   span.highlight {
     background-color: #ffffd0;
+  }
+
+  /* Modern enhancements */
+  table {
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 15px;
+  }
+
+  /* Paper entry cards */
+  tbody tr {
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  tbody tr:hover {
+    background-color: #f8f8f8;
+  }
+
+  /* Teaching and seminars */
+  tbody td {
+    line-height: 1.8;
+  }
+
+  /* Links in lists */
+  ul {
+    margin: 10px 0;
+    padding-left: 25px;
+  }
+
+  li {
+    margin: 8px 0;
+    line-height: 1.7;
+  }
+
+  /* Modern Card Styles */
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 20px 0;
+  }
+
+  .paper-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .paper-card:hover {
+    border-color: #0066cc;
+    box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+    transform: translateY(-2px);
+  }
+
+  .paper-thumbnail {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paper-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .paper-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .paper-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+  }
+
+  .paper-authors {
+    font-size: 14px;
+    color: #666666;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+
+  .paper-venue {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0066cc;
+    margin: 8px 0;
+  }
+
+  .paper-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .paper-links a {
+    padding: 5px 10px;
+    background-color: #e6f2ff;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+
+  .paper-links a:hover {
+    background-color: #0066cc;
+    color: white;
+  }
+
+  .paper-abstract {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+
+  .spotlight-badge {
+    display: inline-block;
+    background-color: #fff4e6;
+    color: #ff8c00;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+
+  .published-badge {
+    display: inline-block;
+    background-color: #e6ffe6;
+    color: #27ae60;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+
+  /* Internship Cards */
+  .experience-card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-left: 4px solid #0066cc;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .experience-card:hover {
+    box-shadow: 0 4px 12px rgba(0,102,204,0.15);
+    transform: translateX(5px);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+  }
+
+  .experience-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .experience-date {
+    font-size: 14px;
+    color: #0066cc;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 15px;
+  }
+
+  .experience-org {
+    font-size: 15px;
+    color: #333333;
+    margin: 8px 0;
+  }
+
+  .experience-description ul {
+    margin: 10px 0;
+    padding-left: 25px;
+  }
+
+  .experience-description li {
+    font-size: 14px;
+    color: #555555;
+    margin: 6px 0;
+  }
+
+  @media (max-width: 768px) {
+    .paper-card {
+      flex-direction: column;
+    }
+
+    .paper-thumbnail {
+      width: 100%;
+      height: 200px;
+    }
+
+    .experience-header {
+      flex-direction: column;
+    }
+
+    .experience-date {
+      margin-left: 0;
+      margin-top: 8px;
+    }
   }
