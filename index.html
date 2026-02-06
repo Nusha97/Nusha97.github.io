@@ -111,7 +111,7 @@
             </tr>
           </tbody></table>
           <div style="max-width:900px;margin:0 auto;">
-            <h2>Research</h2>
+            <h2>Research Publications</h2>
             <p>
               I'm interested in the problem of safety in robotics using layered control, optimization theory, and machine learning. Most of my research is about discovering mathematical principles governing the design of decision-making hierarchies in task planning, trajectory design, and feedback control. Some papers are highlighted below.
             </p>
@@ -145,329 +145,172 @@
                   </div>
                 </div>
               </div>
+
+              <!-- LCSS 2025 Paper -->
+              <div class="paper-card" style="flex-direction: column;">
+                <div class="paper-content" style="width: 100%;">
+                  <div>
+                    <div class="paper-title">
+                      Closed-loop Analysis of ADMM-based Suboptimal Linear Model Predictive Control
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
+                      <a href="">Aren Karapetyan</a>*,
+                      <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
+                      <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
+                    </div>
+                    <div class="paper-venue">📰 LCSS with oral presentation at ACC, 2025</div>
+                    <p class="paper-abstract">
+                      This paper proposes a suboptimal MPC scheme based on the alternating direction method of multipliers (ADMM). We show that using a warm-start approach combined with enough iterations per time-step, yields an ADMM-based suboptimal MPC scheme which asymptotically stabilizes the system and maintains recursive feasibility.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2409.11351">📄 arXiv</a>
+                  </div>
+                  <div style="margin-top: 15px;">
+                    <img src='images/lcss.jpg' style="width: 100%; max-width: 600px; border-radius: 6px;" alt="LCSS">
+                  </div>
+                </div>
+              </div>
+
+              <!-- IROS 2023 Paper -->
+              <div class="paper-card">
+                <div class="paper-thumbnail">
+                  <img src='images/block_diagram.jpg' alt="IROS 2023">
+                </div>
+                <div class="paper-content">
+                  <div>
+                    <div class="paper-title">
+                      A Data-Driven Approach to Synthesizing Dynamics-Aware Trajectories for Underactuated Robotic Systems
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
+                      <a href="">Fengjun Yang</a>,
+                      <a href="">Igor Spasojevic</a>,
+                      <a href="">Dinesh Thakur</a>,
+                      <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
+                      <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
+                    </div>
+                    <div class="paper-venue">📰 IROS 2023</div>
+                    <p class="paper-abstract">
+                      Motivated by the lack of existing methods to account for controller cost in trajectory planning for robotic systems, we propose a principle derivation to decompose a nonlinear optimal control problem into trajectory generation and feedback control layers.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2405.10314">📄 arXiv</a>
+                    <iframe src="https://drive.google.com/file/d/1JkvYeseXEdFfdAW4Z_aveLbsD47jNGD8/preview" width="100%" height="315" allow="autoplay" style="margin-top: 10px;"></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RSS 2023 Paper -->
+              <div class="paper-card" style="flex-direction: column;">
+                <div class="paper-content" style="width: 100%;">
+                  <div>
+                    <div class="paper-title">
+                      Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="">Sukriti Singh</a>,
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
+                      <a href="">Vivek Mallampati</a>,
+                      <a href="">Harish Ravichandar</a>
+                    </div>
+                    <div class="paper-venue">📰 RSS 2023</div>
+                    <p class="paper-abstract">
+                      Task allocation in multi-robot teams is often hindered by unknown task reward functions. This work introduces the COCOA problem, addressed by a continuous-armed bandit algorithm, which uses online optimization to form coalitions that maximize unknown task rewards while respecting resource constraints in real time.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2305.15288">📄 arXiv</a>
+                  </div>
+                  <div style="margin-top: 15px;">
+                    <img src='images/rss.png' style="width: 100%; max-width: 600px; border-radius: 6px;" alt="RSS">
+                  </div>
+                </div>
+              </div>
+
+              <!-- AAMAS 2022 Paper -->
+              <div class="paper-card">
+                <div class="paper-thumbnail">
+                  <img src='images/aamas.png' alt="AAMAS 2022">
+                </div>
+                <div class="paper-content">
+                  <div>
+                    <div class="paper-title">
+                      Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
+                      <a href="">Harish Ravichandar</a>
+                    </div>
+                    <div class="paper-venue">📰 AAMAS 2022</div>
+                    <p class="paper-abstract">
+                      This work proposes a two-part framework that infers heterogeneous strategies from expert demonstrations and adaptively selects the best strategy for coalition formation based on a team's capabilities. Through numerical simulations, StarCraft II battles, and multi-robot emergency-response tasks, the framework outperforms existing approaches in requirement satisfaction, resource utilization, and task success rates.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2108.02733">📄 arXiv</a>
+                    <iframe src="https://drive.google.com/file/d/1aVIet-8JljMrU97FBgWw_VB8NX3SnY9X/preview" width="100%" height="315" allow="autoplay" style="margin-top: 10px;"></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Master's Thesis 2021 -->
+              <div class="paper-card">
+                <div class="paper-thumbnail">
+                  <img src='images/msthesis.png' alt="Masters Thesis">
+                </div>
+                <div class="paper-content">
+                  <div>
+                    <div class="paper-title">
+                      Learning Task Requirements For Coalition Formation in Heterogeneous Multiagent Systems
+                      <span class="published-badge">Published</span>
+                    </div>
+                    <div class="paper-authors">
+                      <a href="https://nusha97.github.io/">Anusha Srikanthan</a>
+                    </div>
+                    <div class="paper-venue">📰 Master's Thesis, Georgia Tech, 2021</div>
+                    <p class="paper-abstract">
+                      This thesis contributes two frameworks to learn implicit task requirements directly from expert demonstrations of coalition formation.
+                    </p>
+                  </div>
+                  <div class="paper-links">
+                    <a href="https://repository.gatech.edu/server/api/core/bitstreams/fb36966a-96f0-4c41-858d-9947120f5b45/content">📄 Georgia Tech Repository</a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div style="max-width:900px;margin:0 auto;padding:0 20px;">
+            <h2>Workshop and Arxiv Papers</h2>
           </div>
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="icra_stop()" onmouseover="icra_start()">
-                <td style="padding:40px;width:50%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/icra.PNG' width="100%">
-                  </div>
-                  <script type="text/javascript">
-                    function icra_start() {
-                      document.getElementById('icra_image').style.opacity = "1";
-                    }
-          
-                    function icra_stop() {
-                      document.getElementById('icra_image').style.opacity = "0";
-                    }
-                    icra_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                    <span class="papertitle">ADMM-MCBF-LCA: A Layered Control Architecture
-                      for Safe Real-Time Navigation</span>
-                  <br>
-                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
-                          <a href="">Yifan Xue</a>*,
-                  <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
-                  <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>,
-                  <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a>
-                  <em>ICRA</em>, 2025
-                  <br>
-                  <div style="margin-top: 10px;">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YhL_OHK8AZ8" title="ADMM-MCBF-LCA Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                  <br>
-                  <p>
-                    To tackle the combined challenges of state and input constaint satisfaction, dynamic feasibility, safety, and real-time computation, we present a layered control architecture (LCA) consisting of an offline path library generation layer, and an online path selection and safety layer.
-                  </p>
-                </td>
-              </tr>
-
-        
-              <tr onmouseout="lcss_stop()" onmouseover="lcss_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/lcss.jpg' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function lcss_start() {
-                      document.getElementById('lcss_image').style.opacity = "1";
-                    }
-          
-                    function lcss_stop() {
-                      document.getElementById('lcss_image').style.opacity = "0";
-                    }
-                    lcss_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2409.11351">
-                    <span class="papertitle">Closed-loop Analysis of ADMM-based
-                      Suboptimal Linear Model Predictive Control</span></a>
-                  <br>
-                          <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
-                  <a href="">Aren Karapetyan</a>*,
-                  <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
-                  <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
-                  <br>
-                  <em>Submitted to LCSS with oral presentation at ACC</em>, 2025
-                  <br>
-                  <p>
-                    This paper proposes a suboptimal MPC scheme based on the alternating direction method of multipliers (ADMM). We show that using a warm-start approach
-                    combined with enough iterations per time-step, yields an ADMM-based suboptimal MPC scheme which asymptotically stabilizes the system and maintains recursive feasibility.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="acc_arxiv_stop()" onmouseover="acc_arxiv_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <img src='images/acc.png' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function acc_arxiv_start() {
-                      document.getElementById('acc_arxiv_image').style.opacity = "1";
-                    }
-          
-                    function acc_arxiv_stop() {
-                      document.getElementById('acc_arxiv_image').style.opacity = "0";
-                    }
-                    acc_arxiv_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2311.06404">
-                  <span class="papertitle">Augmented Lagrangian Methods as Layered Control Architectures</span></a>
-                  <br>
-                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
-                  <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
-                  <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
-                  <br><em>Arxiv preprint</em>
-                  <br>
-                  <p>
-                    We propose the use of alternating direction method of multipliers algorithm (ADMM) on nonlinear optimal control problems to derive a layered control architecture.
-                  </p>
-                </td>
-              </tr>
-          
-
-              <tr onmouseout="quad3d_stop()" onmouseover="quad3d_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="two">
-                    <video id="quad3d_image" src="images/quad3d.mp4" width="100%" controls style="display:none;"></video>
-                  </div>
-                  <div class="one">
-                    <img id="quad3d_static" src="images/quad3d.png" width="100">
-                  </div>
-                  <script type="text/javascript">
-                    function quad3d_start() {
-                      document.getElementById('quad3d_image').style.display = "block";
-                      document.getElementById('quad3d_static').style.display = "none";
-                      document.getElementById('quad3d_image').play();
-                    }
-                    function quad3d_stop() {
-                      document.getElementById('quad3d_image').style.display = "none";
-                      document.getElementById('quad3d_static').style.display = "block";
-                      document.getElementById('quad3d_image').pause();
-                    }
-                    quad3d_stop();
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2401.04960/">
-                    <span class="papertitle">Why Change Your Controller When You Can Change Your Planner: Drag-Aware Trajectory Generation for Quadrotor Systems</span>
-                  </a>
-                  <br>
-                  <a href="">Hanli Zhang</a>*,
-                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
-                  <a href="">Spencer Folk</a>,  
-                  <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
-                  <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
-                  <br>
-                  <em>Arxiv preprint</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2401.04960">arXiv</a>
-                  <p></p>
-                  <p>
-                    
-                  </p>
-                </td>
-              </tr>  
-              
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2505.10228">
-                    <span class="papertitle">QuadLCD: Layered Decomposition Enables Actuator Feasibility</span>
-                  </a>
-                  <br>
-                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>
-                  <br>
-                  <em>ICRA 2025 Workshop on 25 Years of Aerial Robotics</em>
-                  <br>
-                  <strong>Oral Spotlight</strong>
-                  <br>
-                  <a href="https://arxiv.org/abs/2505.10228">arXiv</a>
-                  <p></p>
-                  <p>
-                    We present a layered control architecture that decomposes the quadrotor control problem into planning and feedback control layers, enabling guaranteed actuator feasibility through systematic decomposition theory.
-                  </p>
-                </td>
-              </tr>
-              
-              <tr onmouseout="iros_stop()" onmouseover="iros_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <img src="images/block_diagram.jpg" width="160" alt="Block Diagram">
-                  </div>
-                  <script type="text/javascript">
-                    function iros_start() {
-                      document.getElementById('iros_image').style.opacity = "1";
-                    }
-                    function iros_stop() {
-                      document.getElementById('iros_image').style.opacity = "0";
-                    }
-                    iros_stop();
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2401.04960/">
-                    <span class="papertitle">A Data-Driven Approach to Synthesizing Dynamics-Aware Trajectories for Underactuated Robotic Systems</span>
-                  </a>
-                  <br>
-                  <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
-                  <a href="">Fengjun Yang</a>, 
-                  <a href="">Igor Spasojevic</a>,
-                  <a href="">Dinesh Thakur</a>, 
-                  <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
-                  <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
-                  <br>
-                  <em>IROS</em>, 2023
-                  <br>
-                  <a href="https://arxiv.org/abs/2405.10314">arXiv</a> &nbsp;/&nbsp;
-                  <div style="margin-top: 10px;">
-                    <iframe src="https://drive.google.com/file/d/1JkvYeseXEdFfdAW4Z_aveLbsD47jNGD8/preview" width="100%" height="480" allow="autoplay"></iframe>
-                  </div>
-                  <p></p>
-                  <p>
-                    Motivated by the lack of existing methods to account for controller cost in trajectory planning for robotic systems, we propose a principle derivation to 
-                    decompose a nonlinear optimal control problem into trajectory generation and feedback control layers.
-                  </p>
-                </td>
-              </tr>    
-
-    <tr onmouseout="rss_stop()" onmouseover="rss_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src='images/rss.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function rss_start() {
-            document.getElementById('rss_image').style.opacity = "1";
-          }
-
-          function rss_stop() {
-            document.getElementById('rss_image').style.opacity = "0";
-          }
-          rss_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2305.15288">
-          <span class="papertitle">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation</span>
-        </a>
-        <br>
-        <a href="">Sukriti Singh</a>,
-        <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
-        <a href="">Vivek Mallampati</a>,
-        <a href="">Harish Ravichandar</a>
-        <br>
-        <em>RSS</em>, 2023
-        <br>
-        <a href="https://arxiv.org/abs/2305.15288">arXiv</a>
-        <p></p>
-        <p>
-          Task allocation in multi-robot teams is often hindered by unknown task reward functions. 
-          This work introduces the COCOA problem, addressed by a continuous-armed bandit algorithm, which uses online optimization to form coalitions that 
-          maximize unknown task rewards while respecting resource constraints in real time.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="aamas_stop()" onmouseover="aamas_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src='images/aamas.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function aamas_start() {
-            document.getElementById('aamas_image').style.opacity = "1";
-          }
-
-          function aamas_stop() {
-            document.getElementById('aamas_image').style.opacity = "0";
-          }
-          aamas_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2108.02733">
-          <span class="papertitle">Resource-Aware Adaptation of Heterogeneous Strategies for Coalition Formation
-</span>
-        </a>
-        <br>
-        <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
-        <a href="">Harish Ravichandar</a>
-        <br>
-        <em>AAMAS</em>, 2022
-        <br>
-        <a href="https://arxiv.org/abs/2108.02733">arXiv</a>
-        <p></p>
-        <p>
-          This work proposes a two-part framework that infers heterogeneous strategies from expert demonstrations and adaptively selects the best strategy 
-          for coalition formation based on a team's capabilities. Through numerical simulations, StarCraft II battles, and multi-robot emergency-response tasks, 
-          the framework outperforms existing approaches in requirement satisfaction, resource utilization, and task success rates.
-        </p>
-      </td>
-    </tr>
-
-    <tr onmouseout="msthesis_stop()" onmouseover="msthesis_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src='images/msthesis.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function aamas_start() {
-            document.getElementById('msthesis_image').style.opacity = "1";
-          }
-
-          function aamas_stop() {
-            document.getElementById('msthesis_image').style.opacity = "0";
-          }
-          aamas_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://repository.gatech.edu/server/api/core/bitstreams/fb36966a-96f0-4c41-858d-9947120f5b45/content">
-          <span class="papertitle">Learning Task Requirements For Coalition Formation in
-            Heterogeneous Multiagent Systems</span>
+        <a href="https://arxiv.org/abs/2505.10228">
+          <span class="papertitle">QuadLCD: Layered Decomposition Enables Actuator Feasibility</span>
         </a>
         <br>
         <a href="https://nusha97.github.io/">Anusha Srikanthan</a>
         <br>
-        <em>Masters Thesis</em>, 2021
+        <em>ICRA 2025 Workshop on 25 Years of Aerial Robotics</em>
         <br>
-        <a href="https://repository.gatech.edu/server/api/core/bitstreams/fb36966a-96f0-4c41-858d-9947120f5b45/content">Georgia Tech repository</a>
+        <strong>Oral Spotlight</strong>
+        <br>
+        <a href="https://arxiv.org/abs/2505.10228">arXiv</a>
         <p></p>
         <p>
-          This thesis contributes two frameworks to learn implicit task requirements directly from expert demonstrations of coalition formation.
+          We present a layered control architecture that decomposes the quadrotor control problem into planning and feedback control layers, enabling guaranteed actuator feasibility through systematic decomposition theory.
         </p>
       </td>
     </tr>
@@ -503,7 +346,74 @@
           This paper proposes a resilient task allocation framework for heterogeneous robot teams operating in dynamic environments. Our approach enables robots to adapt to failures and disturbances, improving task success rates. This work was awarded the Excellent Paper Award at the IROS 2021 Workshop.
         </p>
       </td>
-    </tr>    
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/acc.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2311.06404">
+          <span class="papertitle">Augmented Lagrangian Methods as Layered Control Architectures</span>
+        </a>
+        <br>
+        <a href="https://nusha97.github.io/">Anusha Srikanthan</a>,
+        <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
+        <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
+        <br>
+        <em>arXiv preprint</em>
+        <br>
+        <a href="https://arxiv.org/abs/2311.06404">arXiv</a>
+        <p></p>
+        <p>
+          We propose the use of alternating direction method of multipliers algorithm (ADMM) on nonlinear optimal control problems to derive a layered control architecture.
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="two">
+          <video id="quad3d_image" src="images/quad3d.mp4" width="100%" controls style="display:none;"></video>
+        </div>
+        <div class="one">
+          <img id="quad3d_static" src="images/quad3d.png" width="100">
+        </div>
+        <script type="text/javascript">
+          function quad3d_start() {
+            document.getElementById('quad3d_image').style.display = "block";
+            document.getElementById('quad3d_static').style.display = "none";
+            document.getElementById('quad3d_image').play();
+          }
+          function quad3d_stop() {
+            document.getElementById('quad3d_image').style.display = "none";
+            document.getElementById('quad3d_static').style.display = "block";
+            document.getElementById('quad3d_image').pause();
+          }
+          quad3d_stop();
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2401.04960/">
+          <span class="papertitle">Why Change Your Controller When You Can Change Your Planner: Drag-Aware Trajectory Generation for Quadrotor Systems</span>
+        </a>
+        <br>
+        <a href="">Hanli Zhang</a>*,
+        <a href="https://nusha97.github.io/">Anusha Srikanthan</a>*,
+        <a href="">Spencer Folk</a>,  
+        <a href="https://www.kumarrobotics.org/dr-vijay-kumar/">Vijay Kumar</a>,
+        <a href="https://nikolaimatni.github.io/">Nikolai Matni</a>
+        <br>
+        <em>arXiv preprint</em>
+        <br>
+        <a href="https://arxiv.org/abs/2401.04960">arXiv</a>
+        <p></p>
+      </td>
+    </tr>
+
+    </tbody></table>    
 
     <div style="max-width:900px;margin:0 auto;padding:0 20px;">
       <h2>Industry Experience</h2>
