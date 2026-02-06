@@ -12,7 +12,7 @@
     <style>
       body {
           padding: 40px 25px;
-          background-color: #ffffff;
+          background-color: #1a1a1a;
           color: #333333;
           font-size: 16px;
       }
@@ -110,17 +110,6 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in the problem of safety in robotics using layered control, optimization theory, and machine learning. Most of my research is about discovering mathematical principles governing the design of decision-making hierarchies in task planning, trajectory design, and feedback control. Some papers are highlighted below.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
           <div style="max-width:900px;margin:0 auto;">
             <h2>Research</h2>
             <p>
@@ -152,14 +141,14 @@
                     </p>
                   </div>
                   <div class="paper-links">
-                    <a href="https://www.youtube.com/watch?v=YhL_OHK8AZ8">🎥 Video</a>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YhL_OHK8AZ8" title="ADMM-MCBF-LCA Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;display:none;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr onmouseout="icra_stop()" onmouseover="icra_start()">
                 <td style="padding:40px;width:50%;vertical-align:middle">
@@ -188,7 +177,9 @@
                   <a href="https://nbfigueroa.github.io/">Nadia Figueroa</a>
                   <em>ICRA</em>, 2025
                   <br>
-                  <a href="https://www.youtube.com/watch?v=YhL_OHK8AZ8">Video</a>
+                  <div style="margin-top: 10px;">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YhL_OHK8AZ8" title="ADMM-MCBF-LCA Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
                   <br>
                   <p>
                     To tackle the combined challenges of state and input constaint satisfaction, dynamic feasibility, safety, and real-time computation, we present a layered control architecture (LCA) consisting of an offline path library generation layer, and an online path selection and safety layer.
@@ -268,7 +259,7 @@
               <tr onmouseout="quad3d_stop()" onmouseover="quad3d_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="two">
-                    <video id="quad3d_image" src="images/quad3d.mp4" width="100%" style="display:none;"></video>
+                    <video id="quad3d_image" src="images/quad3d.mp4" width="100%" controls style="display:none;"></video>
                   </div>
                   <div class="one">
                     <img id="quad3d_static" src="images/quad3d.png" width="100">
@@ -360,7 +351,9 @@
                   <em>IROS</em>, 2023
                   <br>
                   <a href="https://arxiv.org/abs/2405.10314">arXiv</a> &nbsp;/&nbsp;
-                  <a href="https://drive.google.com/file/d/1JkvYeseXEdFfdAW4Z_aveLbsD47jNGD8/view">Video</a>
+                  <div style="margin-top: 10px;">
+                    <iframe src="https://drive.google.com/file/d/1JkvYeseXEdFfdAW4Z_aveLbsD47jNGD8/preview" width="100%" height="480" allow="autoplay"></iframe>
+                  </div>
                   <p></p>
                   <p>
                     Motivated by the lack of existing methods to account for controller cost in trajectory planning for robotic systems, we propose a principle derivation to 
@@ -512,16 +505,6 @@
       </td>
     </tr>    
 
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody>
-        <tr>
-          <td>
-            <h2>Industry Experience</h2>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
     <div style="max-width:900px;margin:0 auto;padding:0 20px;">
       <h2>Industry Experience</h2>
       
@@ -624,55 +607,59 @@
       </tbody>
     </table>    
 
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody>
-        <tr>
-          <td>
-            <h2>Software projects</h2>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div style="max-width:900px;margin:0 auto;padding:0 20px;">
+      <h2>Software Projects</h2>
+      <div class="projects-cards-container">
+        <!-- Building Damage Assessment -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">🏢 Building Damage Assessment</h3>
+            <span class="project-badge ml-badge">Machine Learning</span>
+          </div>
+          <div class="project-tech">Deep Learning • VGG16 • Python</div>
+          <p style="margin: 10px 0; color: #555;">Developed a deep learning model using VGG16 architecture to automatically assess and classify building damage from aerial imagery. Applied convolutional neural networks for feature extraction and damage severity classification.</p>
+          <div class="project-links">
+            <a href="https://github.com/Nusha97/Damage-Assessment-in-Buildings-using-VGG16">📚 Code</a>
+            <a href="https://github.com/Nusha97/">🔗 More Projects</a>
+          </div>
+        </div>
 
-    <table width="100%" align="center" border="0" cellpadding="20">
-      <tbody>
-        <!-- Software Projects section -->
-        <tr>
-          <td width="100%" valign="center">
-            <a href="#">Building damage assessments using Deep Learning (VGG16)</a>
-            <br>Link to code <a href="https://github.com/Nusha97/Damage-Assessment-in-Buildings-using-VGG16">here.</a> For more recent projects, please checkout my <a href="https://github.com/Nusha97/">GitHub page.</a>
-            <a href="#">IRIS: A software tool for assisting the blind.</a>
-            <br>Designed a software system with a Raspberry Pi 3 using OpenCV, Tessaract (Optical Character Recognition) Engine, and other features to assist blind people with their everyday tasks. Won the Second Place in a Technical Competition, Sangam, held at NIT Trichy in 2017. Link to our code <a href="https://github.com/Nusha97/IRIS-Project">here</a> and report <a href="https://drive.google.com/drive/u/1/home">here.</a>
-            <br>
-            <a href="#">Snake Game using C++</a>
-            <br>A high-school project for a programming class and my love for video games. To play the game, just install a C++ compiler and run the code. A screen should open with the game. For best results, use Turbo C++. Link to code <a href="https://github.com/Nusha97/Snake-Game-C-">here.</a>
-            <br>
-            <br>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <!-- IRIS Project -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">👁️ IRIS: Assistive Technology for the Blind</h3>
+            <span class="project-badge cv-badge">Computer Vision</span>
+          </div>
+          <div class="project-tech">Raspberry Pi • OpenCV • OCR • Python</div>
+          <p style="margin: 10px 0; color: #555;">A comprehensive software system combining computer vision and OCR to assist visually impaired individuals with daily tasks. Integrated Raspberry Pi 3 with OpenCV and Tesseract OCR engine for real-time text recognition and environmental understanding.</p>
+          <div class="project-achievement">🏆 <strong>2nd Place - Sangam Technical Competition (NIT Trichy 2017)</strong></div>
+          <div class="project-links">
+            <a href="https://github.com/Nusha97/IRIS-Project">📚 Code</a>
+            <a href="https://drive.google.com/drive/u/1/home">📄 Report</a>
+          </div>
+        </div>
+
+        <!-- Snake Game -->
+        <div class="project-card">
+          <div class="project-card-header">
+            <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">🎮 Snake Game in C++</h3>
+            <span class="project-badge game-badge">Game Development</span>
+          </div>
+          <div class="project-tech">C++ • Turbo C++ • Graphics Programming</div>
+          <p style="margin: 10px 0; color: #555;">A classic snake game implementation created for a high school programming class. Demonstrates fundamental game development concepts including game loops, collision detection, and graphics rendering. Best played with Turbo C++ compiler.</p>
+          <div class="project-links">
+            <a href="https://github.com/Nusha97/Snake-Game-C-">📚 Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody>
-        <tr>
-          <td>
-            <h2>Invited Talks and Teaching</h2>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
-    <table width="100%" align="center" border="0" cellpadding="20">
-      <tbody>
-        <!-- Invited Talks and Seminars Section -->
-        <tr>
-          <td width="100%" valign="center">
-            <h3>Invited Seminars and Workshop Talks</h3>
-          </td>
-        </tr>
-        <tr>
-          <td width="100%" valign="center">
+    <div style="max-width:900px;margin:0 auto;padding:0 20px;">
+      <h2>Invited Seminars and Workshop Talks</h2>
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tbody>
+          <tr>
+            <td width="100%" valign="center">
             <strong>January 2026:</strong> Presented a poster and attended networking sessions with academic and industry leaders at the Gordon Research Conference, Ventura, CA, USA
             <br>
             <strong>November 2025:</strong> Presented a seminar talk titled "A Layered Control Architecture for Reliable Agility" at the Robotics Seminar Series, University of Delaware
@@ -697,35 +684,136 @@
             <br>
             <strong>August 2023:</strong> Invited talk on "Data-driven Synthesis of Dynamics-Aware Trajectory Generation" at Dr. John Doyle's group, Caltech
             <br>
-          </td>
-        </tr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     
-        <!-- Teaching and Mentorship Section -->
-        <tr>
-          <td width="100%" valign="center">
-            <h3>Teaching and Mentorship</h3>
-          </td>
-        </tr>
-        <tr>
-          <td width="100%" valign="center">
-            <strong>Fall 2025:</strong> Teaching Certificate from the Center for Excellence in Teaching, Learning and Innovation, University of Pennsylvania. Attended five workshops on different aspects of teaching such as effective lecturing, handling office hours and assessments. Had a teaching fellow observe my lecture and provide feedback. Participated in a teaching philosophy workshop and presented my teaching statement to complete the requirements for the teaching certificate.
-            <br>
-            <strong>Spring 2025-2026:</strong> Undergraduate Student Mentor for "Quadrotor Swarm Control using Reinforcement Learning" at University of Pennsylvania. Mentoring undergraduate student Divya Karnani in reinforcement learning, guiding her in policy optimization and hands-on implementation using Python, GitHub workflows, and RL libraries such as Stable Baselines.
-            <br>
-            <strong>Spring 2025:</strong> Guest Lecturer (MEAM 620) for "Learning for Adaptive and Reactive Control of Robots" (Graduate Course) at University of Pennsylvania. Presented research topics in Dr. Nadia Figueroa's robotics course through a bottom-up approach that connected fundamental challenges to complex implementations. The lectures transitioned from decomposition theory for linear systems to the challenges of nonlinear extensions.
-            <br>
-            <strong>Spring 2023-2024:</strong> MS Student Mentor for "Drag-Aware Quadrotor Trajectory Generation" at University of Pennsylvania. Mentored Hanli Zhang (M.S., Penn) on her first research project, developing drag-aware planning algorithms by leveraging trajectory tracking errors as a data-driven proxy for model mismatch, building on cost-to-go learning methods.
-            <br>
-            <strong>Fall 2023:</strong> Head Teaching Assistant (ESE 2040) for "Decision Models" (Undergraduate) at University of Pennsylvania. Assisted supervisor Dr. Nikolai Matni teaching the undergraduate course spanning linear algebra and optimization. Tasked with weekly office hours, homework design, grading and recitations.
-            <br>
-            <strong>Spring 2023:</strong> Teaching Assistant (CIS 419 / 519) for "Applied Machine Learning" (Undergraduate / Graduate) at University of Pennsylvania. Served as TA for a class of over 100 students as part of a massive instructional team. Tasked with recitations, weekly office hours, grading and advised student projects.
-            <br>
-            <strong>Fall 2022:</strong> Teaching Assistant (ESE 530) for "Elements of Probability Theory" (Graduate) at University of Pennsylvania. Part of the instructional staff for Dr. Santhosh Venkatesh teaching ESE 530 which also served as a qualifier for doctoral students. Conducted two office hours per week, monthly recitations and grading. Helped develop an online course on the foundations of machine learning with Dr. Venkatesh.
-            <br>
-            <strong>Summer 2023:</strong> Instructor for "AI and Python Programming" (High School) at Inspirit AI (Online). Part-time instructor of Python and Artificial Intelligence through project-based learning.
-            <br>
-          </td>
-        </tr>
+    <div style="max-width:900px;margin:0 auto;padding:0 20px;">
+      <h2>Teaching and Mentorship</h2>
+          
+          <div class="teaching-cards-container">
+            <!-- Teaching Certificate -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">📜 Teaching Certificate</h3>
+                <span class="teaching-badge certificate-badge">Professional Development</span>
+              </div>
+              <div class="teaching-meta">Fall 2025 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">Center for Excellence in Teaching, Learning and Innovation</p>
+              <ul class="teaching-list">
+                <li>Attended five workshops on effective lecturing, office hours, and assessments</li>
+                <li>Teaching fellow observation and feedback on lecture delivery</li>
+                <li>Teaching philosophy workshop with teaching statement presentation</li>
+              </ul>
+            </div>
+
+            <!-- Undergraduate Mentor -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">👥 Undergraduate Mentor</h3>
+                <span class="teaching-badge mentor-badge">Mentoring</span>
+              </div>
+              <div class="teaching-meta">Spring 2025–2026 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">Quadrotor Swarm Control using Reinforcement Learning</p>
+              <ul class="teaching-list">
+                <li>Mentoring Divya Karnani in reinforcement learning fundamentals</li>
+                <li>Guiding policy optimization and hands-on implementation</li>
+                <li>Working with Python, GitHub workflows, and RL libraries (Stable Baselines)</li>
+              </ul>
+            </div>
+
+            <!-- Guest Lecturer -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">🎓 Guest Lecturer</h3>
+                <span class="teaching-badge lecturer-badge">Lecturing</span>
+              </div>
+              <div class="teaching-meta">Spring 2025 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">MEAM 620: Learning for Adaptive and Reactive Control of Robots</p>
+              <ul class="teaching-list">
+                <li>Presented research topics through bottom-up approach connecting theory to practice</li>
+                <li>Lectures spanning decomposition theory for linear systems to nonlinear extensions</li>
+                <li>Course instructor: Dr. Nadia Figueroa</li>
+              </ul>
+            </div>
+
+            <!-- MS Student Mentor -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">👥 MS Student Mentor</h3>
+                <span class="teaching-badge mentor-badge">Mentoring</span>
+              </div>
+              <div class="teaching-meta">Spring 2023–2024 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">Drag-Aware Quadrotor Trajectory Generation</p>
+              <ul class="teaching-list">
+                <li>Mentored Hanli Zhang on her first research project</li>
+                <li>Developed drag-aware planning algorithms using data-driven methods</li>
+                <li>Leveraged trajectory tracking errors as proxy for model mismatch</li>
+              </ul>
+            </div>
+
+            <!-- Head Teaching Assistant -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">📚 Head Teaching Assistant</h3>
+                <span class="teaching-badge ta-badge">Teaching</span>
+              </div>
+              <div class="teaching-meta">Fall 2023 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">ESE 2040: Decision Models (Undergraduate)</p>
+              <ul class="teaching-list">
+                <li>Supervised by Dr. Nikolai Matni covering linear algebra and optimization</li>
+                <li>Weekly office hours, homework design, grading, and recitations</li>
+                <li>Head TA responsibilities coordinating instructional team</li>
+              </ul>
+            </div>
+
+            <!-- Applied ML Teaching Assistant -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">📚 Teaching Assistant</h3>
+                <span class="teaching-badge ta-badge">Teaching</span>
+              </div>
+              <div class="teaching-meta">Spring 2023 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">CIS 419/519: Applied Machine Learning (Undergrad/Grad)</p>
+              <ul class="teaching-list">
+                <li>Served as TA for 100+ students on massive instructional team</li>
+                <li>Led recitations, weekly office hours, grading, and student project advising</li>
+              </ul>
+            </div>
+
+            <!-- Probability Theory Teaching Assistant -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">📚 Teaching Assistant</h3>
+                <span class="teaching-badge ta-badge">Teaching</span>
+              </div>
+              <div class="teaching-meta">Fall 2022 • University of Pennsylvania</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">ESE 530: Elements of Probability Theory (Graduate)</p>
+              <ul class="teaching-list">
+                <li>Part of instructional staff with Dr. Santhosh Venkatesh</li>
+                <li>Course served as qualifier for doctoral students</li>
+                <li>Two office hours per week, monthly recitations, grading</li>
+                <li>Helped develop online course on foundations of machine learning</li>
+              </ul>
+            </div>
+
+            <!-- AI and Python Instructor -->
+            <div class="teaching-card">
+              <div class="teaching-card-header">
+                <h3 style="margin: 0; font-size: 18px; color: #1a1a1a;">💻 Instructor</h3>
+                <span class="teaching-badge instructor-badge">Instruction</span>
+              </div>
+              <div class="teaching-meta">Summer 2023 • Inspirit AI (Online)</div>
+              <p style="margin: 10px 0; color: #555; font-weight: 500;">AI and Python Programming for High School</p>
+              <ul class="teaching-list">
+                <li>Part-time instructor of Python and Artificial Intelligence</li>
+                <li>Project-based learning approach with hands-on implementation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </tbody>
     </table>
     
